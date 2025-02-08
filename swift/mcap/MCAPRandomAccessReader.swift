@@ -77,7 +77,7 @@ class ChunkCursor: Comparable {
 
   var sortTime: UInt64 {
     if let messageIndexCursors = messageIndexCursors {
-      let cursor = messageIndexCursors!
+      let cursor = messageIndexCursors.min!
       return cursor.records[cursor.index].logTime
     }
     return chunkIndex.messageStartTime
