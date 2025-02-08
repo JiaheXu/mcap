@@ -13,7 +13,7 @@ let package = Package(
     .package(url: "https://github.com/apple/swift-algorithms", from: "1.0.0"),
 
     // Use pre-release version for Heap
-    .package(url: "https://github.com/apple/swift-collections", branch: "release/1.1"),
+    .package(url: "https://github.com/apple/swift-collections", revision: "53a8adc54374f620002a3b6401d39e0feb3c57ae"),
   ],
   targets: [
     .target(
